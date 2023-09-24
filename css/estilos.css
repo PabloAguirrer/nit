@@ -23,71 +23,96 @@ background-attachment: scroll;}
   width: 100%;
   height: 100%;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;}
-
-.nav{
-width: 100%;
-height: 3em;
-display: flex;
-}
-
-.barranav{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  background-color: #E3AF78;
-  border: 3px solid white;         /*ancho del borde, forma y color*/
-  flex-direction: row;            /*para que esten en fila izq a derecha*/
-  justify-content: center;          /*para distribuirlo horizontal*/
-  align-items: center;             /*para alinearlo verticalmente*/
-}
-.menu{
-  width: 20%;
-  height:100%;
-  font-size: 20px;
-  font-family: "Satisfy", "cursive";
-
-
-  color: black;
-  text-decoration: none;                       /*para sacar los puntos o tildes*/
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  border-radius: 1em;                          /*redondear las esquinas*/
+  flex-wrap: wrap;
+}
+
+  /*puede ser un logo, titulo*/
+header{ 
+   display: flex;                           /*flexbox*/
+   justify-content:space-around;    /*separacion entre los elementos cerca de los bordes*/
+    align-items: flex-end;              /* posicionarlos abajo*/                  
+    flex-wrap: wrap;                                        /**/
+    font-size: 50px;
+     
+    font-weight: 1;
+    text-shadow: 1px 0 #EAD5B6, 6px 0 black;
+    color: #E5B36E;
+    border: 5px solid white;
   }
 
-.menu:hover{                          /*para darle "animacion"*/
-  background-color: black;
-  color:#DECA8E;
-  transition: 0.5;
+  nav{
+    width: 100%;
+    height: 5em;
+    display: flex;  
+    flex-wrap: wrap;
+    }
+
+    .barranav{
+      width: 100%;
+      height: 100%;
+      background-color: #E3AF78;
+      border: 3px solid white;         /*ancho del borde, forma y color*/
+      display: flex;                                             
+      justify-content: center;                      
+                  
+    
+    }
+    .menu{
+      width: 20%;
+      height:100%;
+      font-size: 20px;
+      font-family: "Satisfy", "cursive";
+      text-shadow: 1px 0 #EAD5B6, 0px 0 black;
+    
+       display: flex;                         /*flexbox*/
+       justify-content: center;
+       align-items: center;                                        
+       flex-direction: row;              /**/
+    
+       border-radius: 1em;          /*redondear las esquinas*/
+       color: black;
+       text-decoration: none;        /*para sacar los puntos o tildes*/ 
+      
+      }
+    
+    .menu:hover{                          /*para darle "animacion"*/
+      background-color: black;
+      color:#DECA8E;
+      transition: 0.5;
+    }
+
+  .redeslogos{
+     
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+  }
+
+.logo-titulo{
+  width: 200px;
+  height: 200px;
 }
 
-
-header{                                       /*puede ser un logo, titulo*/
-  font-family: "Satisfy", "cursive";
-  font-weight: 1;
-  font-size: 70px;
-  text-shadow: 1px 0 #EAD5B6, 6px 0 black;
-  color: #E5B36E;
-  border: 5px solid white;}
-
-.section1{
+section{
   width: 59%;
   height: 100%;
-  float: left; 
+  float: left;
   margin-top: 10px;                  /*distancia desde arriba*/
   margin-right: 10px;                  /*distancia de la izq*/
-  display:  flex;
-  flex-direction: row;
-  justify-content:center;
-  padding: 5% 0;
 
+  
+  display:  flex;           /*flexbox*/
+  flex-wrap: wrap;
+
+
+  padding: 5% 0;
   border: 5px solid white;}
 
 
@@ -98,74 +123,10 @@ header{                                       /*puede ser un logo, titulo*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.col-derecha{
-  width: 40%;
-  height: 100%;
-  margin-top: 10px;
-  float: right;
-  display:  flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  padding: 0 3%;
-  border: 5px solid rgb(247, 247, 248);}
 
-.der-titulo{
-  font-family: "Satisfy", "cursive";
-        font-weight: 1;
-        margin-top: 100px;
-        color: #ED951A;
-        font-size: 40px;
-        text-align: center;
-        font-family: "Annie Use Your Telescope";
-        }
-
-
-.receta-derecha{
-  color: #B79F53;
-  font-size: 25px;
-  font-family: "Annie Use Your Telescope";
-  text-decoration: underline;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 300px;
-  width: 400px;
-  height: 400px;
-}
-
-.img-mila{
-  width: 500px;
-  height: 500px;
-  margin-top: 100px;
-  border: 3px solid rgb(122, 124, 4);
-}
-.img-pastas{
-  width: 500px;
-  height: 500px;
-  margin-left: 100px;
-  margin-top: 20px;
-  border: 3px solid rgb(122, 124, 4);
-}
-
-.img-asado{
-  width: 500px;
-  height: 500px;
-  margin-top: 150px;
-  margin-left:100px ;
-  border: 3px solid rgb(122, 124, 4);}
-
-  .polenta{
-    margin-bottom: 220px;
-  }
-
-.footer{
-
-  background-color: black;
-  clear:both;                    /*para que no interfiera con section/aside(rompe el float)*/
-                     
-}
 
 .h2{
         font-family: "Satisfy", "cursive";
@@ -173,8 +134,9 @@ header{                                       /*puede ser un logo, titulo*/
         color: #ED951A;
         font-size: 40px;
         text-align: center;
-        font-family: "Annie Use Your Telescope";
+        font-family: "Annie Use Your Telescope";      
 }
+
 .h2-{
   font-family: "Satisfy", "cursive";
   font-weight: 1;
@@ -183,13 +145,15 @@ header{                                       /*puede ser un logo, titulo*/
   font-family: "Annie Use Your Telescope";
   text-align: center;
   }
+
   .h3-{
     color: #E37119;
     font-size: 25px;
     font-family: "Annie Use Your Telescope";
     text-decoration: underline;
-    margin-left: 30px;}
-  
+    margin-left: 30px;
+  }
+
 .h3{
   color: #E37119;
   font-size: 25px;
@@ -208,7 +172,7 @@ header{                                       /*puede ser un logo, titulo*/
     font-size: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    
+
   }
 .p{
   color: #B79F53;
@@ -217,7 +181,7 @@ header{                                       /*puede ser un logo, titulo*/
   margin-left: 110px;
   margin-right: 100px;
 }
-  
+
   .p1{
     color: #B79F53;
     font-size:25px;
@@ -254,10 +218,12 @@ header{                                       /*puede ser un logo, titulo*/
     margin-left:350px;
     color: #B79F53;
     font-size: 35px;}
+
     .video1{
     margin-left: 300px;
     border: 3px solid burlywood;
     }
+
   .iframe2{
     margin-left: 150px;
     border: 3px solid burlywood;}
@@ -289,21 +255,93 @@ header{                                       /*puede ser un logo, titulo*/
       margin-left: 450px;
       color: #B79F53;
       font-size: 40px;}
-    
 
+      aside{
+        width: 40%;
+        height: 100%;
+        margin-top: 10px;
+        float: right;
+      
+        display:  flex;                 /*flexbox*/
+        justify-content: start;
+        align-items: center;              
+        flex-direction: column;
+        flex-wrap: wrap;                     /**/
+      
+        padding: 0 3%;
+        border: 5px solid rgb(247, 247, 248);}
+      
+      .der-titulo{
+        font-family: "Satisfy", "cursive";
+              font-weight: 1;
+              margin-top: 100px;
+              color: #ED951A;
+              font-size: 40px;
+              text-align: center;
+              font-family: "Annie Use Your Telescope";
+              }
+      
+      
+      .receta-derecha{
+        color: #B79F53;
+        font-size: 25px;
+        font-family: "Annie Use Your Telescope";
+        text-decoration: underline;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 300px;
+        width: 400px;
+        height: 400px;
+      }
+      
+      .img-mila{
+        width: 500px;
+        height: 500px;
+        margin-top: 100px;
+        border: 3px solid rgb(122, 124, 4);
+      }
+      .img-pastas{
+        width: 500px;
+        height: 500px;
+        margin-left: 100px;
+        margin-top: 20px;
+        border: 3px solid rgb(122, 124, 4);
+      }
+      
+      .img-asado{
+        width: 500px;
+        height: 500px;
+        margin-top: 150px;
+        margin-left:100px ;
+        border: 3px solid rgb(122, 124, 4);}
+      
+        .polenta{
+          margin-bottom: 220px;
+        }
+
+    .footer{
+      background-color: black;
+      clear:both;                    /*para que no interfiera con section/aside(rompe el float)*/
+
+    }
+
+    .redeslogosfooter{
+     
+      display: flex;
+      flex-direction:row;
+  
+    }
     .redes{
       background-color: black;
       clear:both;                    /*para que no interfiera con section/aside(rompe el float)*/
       color: white;
-      margin-left: 20px;
-      margin-top: 50px;
-    }
-    
-    .redeslogos{
-      margin-top: 50px;
+      
+
+      display: flex;
+      justify-content: space-around;
       flex-direction:row;
-      justify-content: left;
-      display: flex;}
+      align-items: center;
+    } 
 
      .logoface{
         margin-top: 30px;
@@ -314,35 +352,36 @@ header{                                       /*puede ser un logo, titulo*/
           margin-top: 30px;
           width: 60px;
           height: 60px;
-          margin-left: 100px;}
+          margin-left: 5px;}
 
     .logoinsta{
         width: 60px;
         height: 60px;
-        margin-left: 100px;
+        margin-left: 5px;
         margin-top: 30px;
         }
     .boton-whatsapp{
       background-color: #129c30;
-      border: 1px solid white;  /*para que tenga un borde*/
+      border: 1px solid white;           /*para que tenga un borde*/
       position: fixed;                     /*para que este fijo*/
-      z-index: 100;             /*para que este por encima de los demas*/       
+      z-index: 100;             /*para que este por encima de los demas*/
       border-radius: 50%;
-      bottom: 20px;
+      bottom: 100px;
       right: 25px;
       padding: 25x;
       transition: all 300ms ease;
       animation: efecto 1.2s infinite;
     }
-      
+
     .boton-whatsapp:hover{
       transform: scale(1.1);  /* cuando el curso lo toque se mueva*/
       transition: 0.3s;
     }
-    
+
     .boton{
       width: 80px;
-      transform: ease 1s; 
+      transform: ease 1s;
+    
     }
 
     @keyframes efecto{
