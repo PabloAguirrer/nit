@@ -17,21 +17,10 @@ backdrop-filter: blur(18px);
 background-repeat: no-repeat;
 background-position: center center;
 background-size: 100% 100%;
-background-attachment: scroll;}
+background-attachment:scroll;
 
-.main{
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  margin-top: 10%;
-  margin-bottom: 10%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
+
 
   /*puede ser un logo, titulo*/
 header{ 
@@ -48,45 +37,34 @@ header{
   }
 
   nav{
-    width: 100%;
-    height: 5em;
-    display: flex;  
+    background-blend-mode: color;
+    display: flex;
+    justify-content: space-around;
+    font-style: italic;
+    font-family: monospace;
+    font-size: 30px;
+    color: black;
     flex-wrap: wrap;
     }
+    
 
     .barranav{
-      width: 100%;
-      height: 100%;
-      background-color: #E3AF78;
-      border: 3px solid white;         /*ancho del borde, forma y color*/
-      display: flex;                                             
-      justify-content: center;                      
-                  
+      font-family: Helvetica;
+    color: #1e2b2e;
+    font-size: 35px;
+    padding: 30px;
+    text-decoration: none;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 0px 1px 3px #000000;
+    -moz-box-shadow: 0px 1px 3px #000000;
+    box-shadow: 0px 1px 3px #000000;
+    text-shadow: 1px 1px 3px #faf3fa;
+    border: solid #ffffff 2px;
+    background-color: #B79F53;
+     }
     
-    }
-    .menu{
-      width: 20%;
-      height:100%;
-      font-size: 20px;
-      font-family: "Satisfy", "cursive";
-      text-shadow: 1px 0 #EAD5B6, 0px 0 black;
-    
-       display: flex;                         /*flexbox*/
-       justify-content: center;
-       align-items: center;                                        
-       flex-direction: row;              /**/
-    
-       border-radius: 1em;          /*redondear las esquinas*/
-       color: black;
-       text-decoration: none;        /*para sacar los puntos o tildes*/ 
-      
-      }
-    
-    .menu:hover{                          /*para darle "animacion"*/
-      background-color: black;
-      color:#DECA8E;
-      transition: 0.5;
-    }
 
   .redeslogos{
      
@@ -113,10 +91,8 @@ section{
 
 
   padding: 5% 0;
-  border: 5px solid white;}
-
-
-
+  border: 5px solid white;
+}
 
 .izq-titulo{
   display:  flex;
@@ -319,9 +295,16 @@ section{
           margin-bottom: 220px;
         }
 
-    .footer{
+    footer{
+        
       background-color: black;
       clear:both;                    /*para que no interfiera con section/aside(rompe el float)*/
+      color: white;
+      display: flex;           
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-direction:row;
+      align-items: center;
 
     }
 
@@ -331,17 +314,7 @@ section{
       flex-direction:row;
   
     }
-    .redes{
-      background-color: black;
-      clear:both;                    /*para que no interfiera con section/aside(rompe el float)*/
-      color: white;
-      
-
-      display: flex;
-      justify-content: space-around;
-      flex-direction:row;
-      align-items: center;
-    } 
+    
 
      .logoface{
         margin-top: 30px;
@@ -361,10 +334,12 @@ section{
         margin-top: 30px;
         }
 
+        
         .container-boton{
+          margin: 50px 70px 0 0;
           background-color: #2e6329;      /*color al ic*/
           border: 1px solid #fff;
-          position: fixed;                  /*para dejarlo fijo*/
+          position: fixed;                   /*para dejarlo fijo*/
           z-index: 999;                     /*para que este sobre todos*/
           border-radius: 50%;              
           bottom: 20px;                    /*distancia*/
@@ -377,16 +352,18 @@ section{
       .container-boton:hover{
           transform: scale(1.1);
           transition: 0.3s;
+        
       }
       
       .boton{
           width: 80px;                 /*tamaño del boton */
           transition: ease 1s;
+          
       }
       
-      @keyframes efecto{
+      @keyframes efecto{                                     /*animacion para el icono de whatsapp*/
           0%{
-              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);      /*sombreado*/
           }
           100%{
               box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
