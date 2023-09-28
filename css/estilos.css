@@ -13,11 +13,12 @@
 
 body{
 background-image: url("../imagenes/fondo5.png");
-backdrop-filter: blur(18px);
+
 background-repeat: no-repeat;
 background-position: center center;
 background-size: 100% 100%;
 background-attachment:scroll;
+background-color: #fafafa;
 
 }
 
@@ -26,16 +27,18 @@ background-attachment:scroll;
 header{ 
    display: flex;                           /*flexbox*/
    justify-content:space-around;    /*separacion entre los elementos cerca de los bordes*/
-    align-items: flex-end;              /* posicionarlos abajo*/                  
+    align-items: center;              /* posicionarlos abajo*/                  
     flex-wrap: wrap;                                        /**/
-    font-size: 50px;
-     
+    font-size: 35px;
+   
     font-weight: 1;
     text-shadow: 1px 0 #EAD5B6, 6px 0 black;
     color: #E5B36E;
-    border: 5px solid white;
-  }
-
+    border: 5px solid rgb(197, 195, 195);
+    }
+   
+ 
+ 
   nav{
     background-blend-mode: color;
     display: flex;
@@ -82,35 +85,35 @@ section{
   width: 59%;
   height: 100%;
   float: left;
-  margin-top: 10px;                  /*distancia desde arriba*/
+  margin-top: 0px;                  /*distancia desde arriba*/
   margin-right: 10px;                  /*distancia de la izq*/
 
   
   display:  flex;           /*flexbox*/
   flex-wrap: wrap;
-
-
-  padding: 5% 0;
-  border: 5px solid white;
-}
-
-.izq-titulo{
-  display:  flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items:flex-start;
+
+  padding: 5% 0;
+  border: 5px solid rgb(197, 195, 195);
+  box-sizing: border-box;
+  
+  
 }
 
 
 
 .h2{
-        font-family: "Satisfy", "cursive";
-        font-weight: 1;
-        color: #ED951A;
-        font-size: 40px;
-        text-align: center;
-        font-family: "Annie Use Your Telescope";      
+   font-family: "Satisfy", "cursive";
+  font-weight: 1;
+  color: #ED951A;
+  font-size: 40px;
+  text-align:center;
+  font-family: "Annie Use Your Telescope";
+  margin-left: 250px;
+  margin-bottom: 50px;   
+  
 }
 
 .h2-{
@@ -135,7 +138,8 @@ section{
   font-size: 25px;
   font-family: "Annie Use Your Telescope";
   text-decoration: underline;
-  margin-left: 30px;}
+  margin-left: 30px;
+}
 .ul{
     color: #B79F53;
     text-shadow: 1px 0 #EAD5B6, 1px 0 black;
@@ -236,7 +240,7 @@ section{
         width: 40%;
         height: 100%;
         margin-top: 10px;
-        float: right;
+        
       
         display:  flex;                 /*flexbox*/
         justify-content: start;
@@ -245,18 +249,22 @@ section{
         flex-wrap: wrap;                     /**/
       
         padding: 0 3%;
-        border: 5px solid rgb(247, 247, 248);}
-      
-      .der-titulo{
+        border: 5px solid rgb(197, 195, 195);
+
         font-family: "Satisfy", "cursive";
-              font-weight: 1;
-              margin-top: 100px;
-              color: #ED951A;
-              font-size: 40px;
-              text-align: center;
-              font-family: "Annie Use Your Telescope";
-              }
-      
+        font-weight: 1;
+            
+        color: #ED951A;
+         font-size: 40px;
+         text-align: center;
+         font-family: "Annie Use Your Telescope";
+         box-sizing: border-box;
+        }
+     
+      .mas-recetas{
+        margin-top: 100px;
+        margin-bottom: 203px;
+      }
       
       .receta-derecha{
         color: #B79F53;
