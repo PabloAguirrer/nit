@@ -17,7 +17,7 @@ background-image: url("../imagenes/fondo5.png");
 background-repeat: no-repeat;
 background-position: center center;
 background-size: 100% 100%;
-background-attachment:scroll;
+background-attachment:fixed;
 background-color: #fafafa;
 
 }
@@ -81,9 +81,16 @@ header{
   height: 200px;
 }
 
+.contenedor{
+  display: flex;                           /*flexbox*/
+  justify-content: center;
+  flex-wrap: wrap;   
+                                              /**/
+}
+
 section{
-  width: 59%;
-  height: 100%;
+  width:1100px;
+ 
   float: left;
   margin-top: 0px;                  /*distancia desde arriba*/
   margin-right: 10px;                  /*distancia de la izq*/
@@ -105,24 +112,26 @@ section{
 
 
 .h2{
-   font-family: "Satisfy", "cursive";
+   
   font-weight: 1;
   color: #ED951A;
   font-size: 40px;
-  text-align:center;
   font-family: "Annie Use Your Telescope";
-  margin-left: 250px;
-  margin-bottom: 50px;   
-  
+  text-decoration: none;
+    
+    margin-left: 300px;
+    margin-bottom: 350px;
 }
 
 .h2-{
   font-family: "Satisfy", "cursive";
-  font-weight: 1;
+  
   color: #ED951A;
   font-size: 30px;
   font-family: "Annie Use Your Telescope";
-  text-align: center;
+  display: flex;                           /*flexbox centrar subtitulos*/
+    align-items: center;
+   justify-content:center;
   }
 
   .h3-{
@@ -130,7 +139,8 @@ section{
     font-size: 25px;
     font-family: "Annie Use Your Telescope";
     text-decoration: underline;
-    margin-left: 30px;
+    
+    margin-left: 50px;
   }
 
 .h3{
@@ -138,112 +148,160 @@ section{
   font-size: 25px;
   font-family: "Annie Use Your Telescope";
   text-decoration: underline;
-  margin-left: 30px;
+  display: flex;                           /*flexbox centrar subtitulos*/
+    align-items: center;
+   margin-left: 50px;
 }
 .ul{
     color: #B79F53;
     text-shadow: 1px 0 #EAD5B6, 1px 0 black;
     font-size: 25px;
-    margin-left: 100px;
-    }
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left: 50px;
+  }
+    
+   
+    
 .ol{
     color: #B79F53;
     text-shadow: 1px 0 #EAD5B6, 1px 0 black;
     font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left: 50px;
+   
+    
 
   }
 .p{
   color: #B79F53;
   font-size: 25px;
   font-family: georgia;
-  margin-left: 110px;
-  margin-right: 100px;
+  display: flex;
+    align-items: center;
+   justify-content:center;
 }
 
   .p1{
     color: #B79F53;
     font-size:25px;
     font-family: georgia;
-    margin-left: 250px;
+    display: flex;
+    align-items: center;
+   justify-content:center;
+    
   }
 
 .img1{
   width:400px;
   height:400px;
-  margin-left: 150px;
+  margin-left: 300px;
   border: 3px solid burlywood;
 }
 .img2{
   width: 400px;
   height:400px;
   border: 3px solid burlywood;
+  margin-left: 300px;
+  
+   
   }
 
 .img3{
   width: 400px;
   height:400px;
-  margin-left:350px;
   border: 3px solid burlywood;
+  margin-left: 350px;
 }
 
   .pfinal{
-    margin-left: 250px;
+    
     font-family: georgia;
     color:#B79F53;
     font-size: 35px;
+    display: flex;
+    align-items: center;
+   justify-content:center;
   }
   .h3video{
-    margin-left:350px;
+   
     color: #B79F53;
-    font-size: 35px;}
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+   justify-content:center;
+    
+    
+  }
 
     .video1{
-    margin-left: 300px;
+      
+     
     border: 3px solid burlywood;
+    margin-left: 250px;
     }
 
   .iframe2{
-    margin-left: 150px;
-    border: 3px solid burlywood;}
+    
+    border: 3px solid burlywood;
+    display: flex;
+    margin-left: 250px;
+    
+    }
 
   .ifram3{
-    margin-left: 250px;
+    
     border: 3px solid burlywood;
+    display: flex;
+    margin-left: 250px;
+   
   }
 
   .a1{
     color: blue;
     font-size: 40px;
     font-family: fantasy;
-    margin-left:350px;
-    text-shadow: 1px 0 #EAD5B6, 1px 0 white;}
+    text-shadow: 1px 0 #EAD5B6, 1px 0 white;
+    display: flex;
+    align-items: center;
+   justify-content:center;
+  }
   .a2{
     color: blue;
     font-size: 40px;
     font-family: fantasy;
-    margin-left: 350px;
-    text-shadow: 1px 0 #EAD5B6, 1px 0 white;}
+    text-shadow: 1px 0 #EAD5B6, 1px 0 white;
+    display: flex;
+    align-items: center;
+   justify-content:center;
+  }
   .a3{
     color: blue;
     font-size: 40px;
     font-family: fantasy;
-    margin-left: 350px;
-    text-shadow: 1px 0 #EAD5B6, 1px 0 white;}
+    text-shadow: 1px 0 #EAD5B6, 1px 0 white;
+    display: flex;
+    align-items: center;
+   justify-content:center;
+  }
     .h4{
-      margin-left: 450px;
+      
       color: #B79F53;
-      font-size: 40px;}
+      font-size: 40px;
+      display: flex;
+    align-items: center;
+   justify-content:center;
+    }
+
+
 
       aside{
-        width: 40%;
-        height: 100%;
-        margin-top: 10px;
-        
-      
+        width: 790px;
         display:  flex;                 /*flexbox*/
-        justify-content: start;
+        justify-content:center;
         align-items: center;              
         flex-direction: column;
         flex-wrap: wrap;                     /**/
@@ -263,7 +321,6 @@ section{
      
       .mas-recetas{
         margin-top: 100px;
-        margin-bottom: 203px;
       }
       
       .receta-derecha{
@@ -272,31 +329,24 @@ section{
         font-family: "Annie Use Your Telescope";
         text-decoration: underline;
         text-align: center;
-        margin-top: 50px;
-        margin-bottom: 300px;
         width: 400px;
         height: 400px;
       }
       
       .img-mila{
-        width: 500px;
-        height: 500px;
-        margin-top: 100px;
+        width: 400px;
+        height: 400px;
         border: 3px solid rgb(122, 124, 4);
       }
       .img-pastas{
-        width: 500px;
-        height: 500px;
-        margin-left: 100px;
-        margin-top: 20px;
+        width: 400px;
+        height: 400px;
         border: 3px solid rgb(122, 124, 4);
       }
       
       .img-asado{
-        width: 500px;
-        height: 500px;
-        margin-top: 150px;
-        margin-left:100px ;
+        width: 400px;
+        height: 400px;
         border: 3px solid rgb(122, 124, 4);}
       
         .polenta{
