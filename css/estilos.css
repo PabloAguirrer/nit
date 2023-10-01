@@ -25,6 +25,7 @@ background-color: #fafafa;
 
   /*puede ser un logo, titulo*/
 header{ 
+  
    display: flex;                           /*flexbox*/
    justify-content:space-around;    /*separacion entre los elementos cerca de los bordes*/
     align-items: center;              /* posicionarlos abajo*/                  
@@ -82,56 +83,74 @@ header{
 }
 
 .contenedor{
+  
   display: flex;                           /*flexbox*/
-  justify-content: center;
-  flex-wrap: wrap;   
-                                              /**/
+  justify-content:space-around;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  
+  align-items:flex-start;  
+  width: 100%; 
+                                            
 }
 
 section{
-  width:1100px;
- 
-  float: left;
-  margin-top: 0px;                  /*distancia desde arriba*/
-  margin-right: 10px;                  /*distancia de la izq*/
-
-  
+  width:1200px;
   display:  flex;           /*flexbox*/
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column; 
+  justify-content:flex-start;
   align-items:flex-start;
 
-  padding: 5% 0;
+ 
   border: 5px solid rgb(197, 195, 195);
-  box-sizing: border-box;
   
   
+   
 }
 
+aside{
+  width: 670px;
+  display: flex;                 /*flexbox*/
+  flex-wrap: wrap;                     /**/
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items:center;         /*centra lo que esta dentro de la caja*/     
+  
+  
+
+  padding: 0 3%;
+  border: 5px solid rgb(197, 195, 195);
+
+  font-family: "Satisfy", "cursive";
+  font-weight: 1;
+      
+  color: #ED951A;
+   font-size: 40px;
+   text-align: center;
+  
+  }
 
 
 .h2{
    
   font-weight: 1;
   color: #ED951A;
-  font-size: 40px;
-  font-family: "Annie Use Your Telescope";
+  font-size: 30px;
+  font-family: "Satisfy", "cursive";
   text-decoration: none;
+  padding-top: 100px;
+  padding-left: 50px;
     
-    margin-left: 300px;
-    margin-bottom: 350px;
 }
 
 .h2-{
-  font-family: "Satisfy", "cursive";
-  
   color: #ED951A;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Annie Use Your Telescope";
-  display: flex;                           /*flexbox centrar subtitulos*/
-    align-items: center;
-   justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content:center;
   }
 
   .h3-{
@@ -139,8 +158,9 @@ section{
     font-size: 25px;
     font-family: "Annie Use Your Telescope";
     text-decoration: underline;
+   
     
-    margin-left: 50px;
+    
   }
 
 .h3{
@@ -148,18 +168,16 @@ section{
   font-size: 25px;
   font-family: "Annie Use Your Telescope";
   text-decoration: underline;
-  display: flex;                           /*flexbox centrar subtitulos*/
-    align-items: center;
-   margin-left: 50px;
+  
+  
 }
 .ul{
     color: #B79F53;
     text-shadow: 1px 0 #EAD5B6, 1px 0 black;
     font-size: 25px;
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    margin-left: 50px;
+    
+    margin-left: 20px;
+    
   }
     
    
@@ -168,10 +186,8 @@ section{
     color: #B79F53;
     text-shadow: 1px 0 #EAD5B6, 1px 0 black;
     font-size: 20px;
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    margin-left: 50px;
+    
+    margin-left: 20px;
    
     
 
@@ -198,15 +214,13 @@ section{
 .img1{
   width:400px;
   height:400px;
-  margin-left: 300px;
   border: 3px solid burlywood;
+  
 }
 .img2{
   width: 400px;
   height:400px;
   border: 3px solid burlywood;
-  margin-left: 300px;
-  
    
   }
 
@@ -214,7 +228,9 @@ section{
   width: 400px;
   height:400px;
   border: 3px solid burlywood;
-  margin-left: 350px;
+  
+  
+  
 }
 
   .pfinal{
@@ -241,22 +257,21 @@ section{
       
      
     border: 3px solid burlywood;
-    margin-left: 250px;
+    
     }
 
   .iframe2{
     
     border: 3px solid burlywood;
-    display: flex;
-    margin-left: 250px;
+   
     
     }
 
   .ifram3{
     
     border: 3px solid burlywood;
-    display: flex;
-    margin-left: 250px;
+    
+    
    
   }
 
@@ -296,29 +311,6 @@ section{
    justify-content:center;
     }
 
-
-
-      aside{
-        width: 790px;
-        display:  flex;                 /*flexbox*/
-        justify-content:center;
-        align-items: center;              
-        flex-direction: column;
-        flex-wrap: wrap;                     /**/
-      
-        padding: 0 3%;
-        border: 5px solid rgb(197, 195, 195);
-
-        font-family: "Satisfy", "cursive";
-        font-weight: 1;
-            
-        color: #ED951A;
-         font-size: 40px;
-         text-align: center;
-         font-family: "Annie Use Your Telescope";
-         box-sizing: border-box;
-        }
-     
       .mas-recetas{
         margin-top: 100px;
       }
