@@ -86,7 +86,7 @@ header{
 }
 
 .contenedor{
-  width: 100%;
+  width: 100vw;
   display: flex;                           /*flexbox*/
   justify-content:space-around;
   flex-wrap: wrap; 
@@ -125,7 +125,7 @@ aside{
   
 
   padding: 0 3%;
-  padding-bottom: 12.4%;
+  padding-bottom: 12.2%;
   border: 5px solid rgb(197, 195, 195);
 
   font-family: "Satisfy", "cursive";
