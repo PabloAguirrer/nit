@@ -57,7 +57,7 @@ header{
     .barranav{
       font-family: 'Annie Use Your Telescope', cursive;
       
-    color: #1e2b2e;
+    color: #8ad7e9;
     font-size: 35px;
     padding: 30px;
     text-decoration: none;
@@ -412,13 +412,15 @@ aside{
      .logoface{
         margin-top: 30px;
         width: 60px;
-        height: 60px;}
+        height: 60px;
+      }
 
     .logotwitter{
           margin-top: 30px;
           width: 60px;
           height: 60px;
-          margin-left: 5px;}
+          margin-left: 5px;
+        }
 
     .logoinsta{
         width: 60px;
@@ -468,24 +470,23 @@ aside{
       }
       
       a:visited {
-        color: #481e77;
+        color: #310464;
       }
       a:active {
-        color: rgb(115, 180, 218);
+        color: rgb(234, 237, 238);
       }
-      .barranav:hover {
-        color:rgb(98, 100, 211) ;
-       font-size: 37px;
-      }
+      
+      
        a:hover{
-        color:rgb(98, 100, 211) ;
+        color:rgb(160, 11, 11) ;
        }
       .contacto:hover {
-        color:rgb(98, 100, 211) ;
+        color:rgb(160, 11, 11) ;
         width: 240px;
-        font-size: 20px;
-        
+        font-size: 20px;  
       }
+
+      
 
       .img-mila:hover {
         width: 410px;
