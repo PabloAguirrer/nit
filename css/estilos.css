@@ -127,9 +127,8 @@ aside{
   display: flex;                 /*flexbox*/
   flex-wrap: wrap;                     /**/
   flex-direction: column;
-  justify-content:flex-start;
   align-items:center;         /*centra lo que esta dentro de la caja*/     
-  text-align: center;
+  text-align: center;          /*centra texto,fotos,etc*/
   
 
   padding: 0 3%;
@@ -167,7 +166,7 @@ aside{
   font-family: "Satisfy", "cursive";
   text-decoration: none;
   padding-top: 8%;                                 /* padding separacion de x bordes*/
-  padding-left: 15%;
+  
     
 }
 
