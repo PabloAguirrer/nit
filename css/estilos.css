@@ -29,8 +29,9 @@ header{
    
    display: flex;                           /*flexbox*/
    justify-content:space-around;    /*separacion entre los elementos cerca de los bordes*/
-    align-items: center;              /* posicionarlos abajo*/                  
-    flex-wrap: wrap;                                        /**/
+    align-items: center;              /*alinea los elementos en el centro verticalmente(padre)*/                
+    flex-wrap: wrap;                            /**/
+
     font-size: 35px;
    
     font-weight: 1;
@@ -44,13 +45,15 @@ header{
  
   nav{
     background-blend-mode: color;
-    display: flex;
+    display: flex;                       /*flexbox*/
     justify-content: space-around;
+    flex-wrap: wrap;
+    
     font-style: italic;
     font-family: monospace;
     font-size: 30px;
     color: black;
-    flex-wrap: wrap;
+    
     }
     
 
@@ -69,10 +72,13 @@ header{
     box-shadow: 0px 1px 3px #000000;
     text-shadow: 1px 1px 3px #faf3fa;
     border: solid #ffffff 2px;
-    background-color: #B79F53;
+    background-color: #B79F53;                    /*color de fondo*/
      }
     
-
+  .titulo{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+  }
   .redeslogos{
      
     display: flex;
@@ -104,7 +110,9 @@ section{
   flex-wrap: wrap;
   flex-direction: column; 
   justify-content:flex-start;
-  align-items:flex-start;
+  align-items:center;
+  text-align: center;
+  
   padding-left: 5%;
   padding-right: 5%;
  
@@ -125,7 +133,7 @@ aside{
   
 
   padding: 0 3%;
-  padding-bottom: 12.2%;
+  padding-bottom: 28.5%;
   border: 5px solid rgb(197, 195, 195);
 
   font-family: "Satisfy", "cursive";
@@ -134,20 +142,19 @@ aside{
   color: #ED951A;
    font-size: 40px;
    
-  
   }
 
-  
+   
  
   footer{
     
     background-color: black;
       
     color: white;
-    display: flex;           
+    display: flex;                      
     flex-wrap: wrap;
     justify-content: space-around;
-    flex-direction:row;
+    flex-direction:row;                  /*se ordenarán los elementos en el espacio de izquierda a derecha*/
     align-items: center;
 
   }
@@ -159,7 +166,7 @@ aside{
   font-size: 30px;
   font-family: "Satisfy", "cursive";
   text-decoration: none;
-  padding-top: 8%;
+  padding-top: 8%;                                 /* padding separacion de x bordes*/
   padding-left: 15%;
     
 }
@@ -190,13 +197,15 @@ aside{
   text-decoration: underline;
   
   
+  
+  
 }
 .ul{
     color: #B79F53;
     text-shadow: 1px 0 #EAD5B6, 1px 0 black;
     font-size: 25px;
     
-    margin-left: 3% 3%;
+    
     
   }
     
@@ -205,9 +214,9 @@ aside{
 .ol{
     color: #B79F53;
     text-shadow: 1px 0 #EAD5B6, 1px 0 black;
-    font-size: 20px;
+    font-size: 25px;
     
-    padding: 3% 3%;
+    
    
     
 
@@ -248,6 +257,7 @@ aside{
   width: 50%;
   height:50%;
   border: 3px solid burlywood;
+ 
   
   
   
@@ -294,6 +304,7 @@ aside{
     
     border: 3px solid burlywood;
     width: 80%;
+    padding-bottom: 5%;
     
     
    
@@ -396,7 +407,7 @@ aside{
         width: 400px;
         height: 400px;
         border: 3px solid rgb(122, 124, 4);
-        margin-bottom: 220px;
+       
         }
 
     
@@ -451,7 +462,7 @@ aside{
       }
       
       .boton{
-          width: 80px;                 /*tamaño del boton */
+          width: 60px;                 /*tamaño del boton */
           transition: ease 1s;
           
       }
@@ -464,20 +475,20 @@ aside{
               box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
           }
       }
-      a:link {
-        color: white;
+      a:link {                          /*pseudo*/
+        color: white;             /* para saber que un link no fue visitado(clickeado)*/
         
       }
       
-      a:visited {
+      a:visited {                   /*para reconocer que un lugar fue visitado*/
         color: #310464;
       }
-      a:active {
+      a:active {                       /*especifica el aspecto cuando mantienes el click*/
         color: rgb(234, 237, 238);
       }
       
       
-       a:hover{
+       a:hover{                        /*especifica el aspecto cuando el puntero esta sobre el*/
         color:rgb(160, 11, 11) ;
        }
       .contacto:hover {
@@ -527,10 +538,85 @@ aside{
         color: blue;
       }
 
+      .gost{
+        color: #f0d16b;
+        display: flex;                           /*flexbox*/
+        justify-content:space-around;    /*separacion entre los elementos cerca de los bordes*/
+        align-items: center;              /*alinea los elementos en el centro verticalmente(padre)*/                
+        flex-wrap: wrap;                            /**/
+      }
+                                  
+      @media (min-width:575px){
+        .gost{                              /*cuando llegue a 575px aparecera el contenido*/
+          display: none;
+        }
+      }
       
-      
+      @media (max-width:575px){
+        header{ 
+          border: none;
+        }
+      }
+     
 
-      
+      @media (max-width:768px) {
+        .titulo{
+          
+          font-family: 'Fuggles', cursive;               /*tipo de letra*/
+          font-size: 150px;                               /*tamaño*/
+          color:#eec6ee ;  
+          text-align: center;           
+        }
+      }
+      @media (max-width:768px) {
+        .logo-titulo{
+          display: none;
+        }
+      }
 
+      @media (max-width:575px){
+        .audio{                              /*cuando llegue a 575px aparecera el contenido*/
+          display: none;
+        }
+      }
+      
+      @media (max-width:575px){
+      nav{  
+                                  
+          flex-direction: column;
+          
+        }
+      }
+      
+      @media (max-width:768px){
+        .barranav{  
+                                    
+            background-color: #ecc2ee;
+            border: none;
+          }
+        }
+
+        @media (max-width:768px){
+          section{  
+            border: none;
+            justify-content:center;
+            align-items:center;
+            text-align:left;
+            
+                               
+            }
+          }
+      @media (max-width:768px){
+        aside{  
+          display: none; 
+                             
+          }
+        }
+
+        @media (max-width:575px){
+          .redeslogos{                              /*cuando llegue a 575px aparecera el contenido*/
+            display: none;
+          }
+        }
     
     
