@@ -415,34 +415,33 @@ aside{
      
       display: flex;
       flex-direction:row;
+      align-items: center;
   
     }
     
 
      .logoface{
-        margin-top: 30px;
+       
         width: 60px;
         height: 60px;
       }
 
     .logotwitter{
-          margin-top: 30px;
+          
           width: 60px;
           height: 60px;
-          margin-left: 5px;
+         
         }
 
     .logoinsta{
         width: 60px;
         height: 60px;
-        margin-left: 5px;
-        margin-top: 30px;
+        
         }
 
         
         .container-boton{
-          margin: 50px 70px 0 0;
-          background-color: #2e6329;      /*color al ic*/
+          background-color: #2e6329;      /*color al ico*/
           border: 1px solid #fff;
           position: fixed;                   /*para dejarlo fijo*/
           z-index: 999;                     /*para que este sobre todos*/
@@ -500,40 +499,46 @@ aside{
 
       .img-mila:hover {
         width: 410px;
-        height:410px;
+        height:400px;
         color: blue;
       }
       .img-pastas:hover {
         width: 410px;
-        height:410px;
+        height:400px;
         color: blue;
       }
       .img-asado:hover {
         width: 405px;
-        height:405px;
+        height:400px;
         color: blue;
       }
       .img-albondigas:hover {
         width: 420px;
-        height:420px;
+        height:400px;
         color: blue;
       }
 
       .img-hamburguesa:hover {
         width: 420px;
-        height:420px;
+        height:400px;
         color: blue;
       }
 
       .img-paella:hover {
         width: 420px;
-        height:420px;
+        height:400px;
         color: blue;
       }
       
       .img-arroz:hover {
         width: 420px;
-        height:420px;
+        height:400px;
+        color: blue;
+      }
+
+      .img-polenta:hover {
+        width: 420px;
+        height:400px;
         color: blue;
       }
 
