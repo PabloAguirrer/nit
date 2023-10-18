@@ -12,7 +12,7 @@
 
 
 body{
-background-image: url("../imagenes/fondo5.png");
+background-image: url("../imagenes/empanada-fondo.png");
 
 background-repeat: no-repeat;
 background-position: center center;
@@ -41,7 +41,8 @@ header{
     
     }
    
- 
+    
+  
  
   nav{
     background-blend-mode: color;
@@ -51,7 +52,7 @@ header{
     
     font-style: italic;
     font-family: monospace;
-    font-size: 30px;
+    font-size: 2px;
     color: black;
     
     }
@@ -61,7 +62,7 @@ header{
       font-family: 'Annie Use Your Telescope', cursive;
       
     color: #8ad7e9;
-    font-size: 35px;
+    font-size: 25px;
     padding: 30px;
     text-decoration: none;
     -webkit-border-radius: 28px;
@@ -72,7 +73,7 @@ header{
     box-shadow: 0px 1px 3px #000000;
     text-shadow: 1px 1px 3px #faf3fa;
     border: solid #ffffff 2px;
-    background-color: #B79F53;                    /*color de fondo*/
+    background-color: #a58b37;                    /*color de fondo*/
      }
     
   .titulo{
@@ -91,27 +92,19 @@ header{
   height: 200px;
 }
 
-.contenedor{
-  width: 100vw;
-  display: flex;                           /*flexbox*/
-  justify-content:space-around;
-  flex-wrap: wrap; 
-  flex-direction: row;
-  
-  align-items:flex-start;  
-  
+/*.container-fluid{
  
-                                            
-}
+  display: flex; 
+  justify-content:space-around;} */
 
-section{
-  width:1200px;
-  display:  flex;           /*flexbox*/
-  flex-wrap: wrap;
+.section{
+  
+  display:  flex;                      /*flexbox*/
   flex-direction: column; 
-  justify-content:flex-start;
+  justify-content:space-around;
   align-items:center;
   text-align: center;
+ 
   
   padding-left: 5%;
   padding-right: 5%;
@@ -122,17 +115,18 @@ section{
    
 }
 
-aside{
-  width: 670px;
+.aside{
+  
   display: flex;                 /*flexbox*/
   flex-wrap: wrap;                     /**/
-  flex-direction: column;
+  flex-direction: row;
   align-items:center;         /*centra lo que esta dentro de la caja*/     
   text-align: center;          /*centra texto,fotos,etc*/
+  justify-content:center;
   
 
   padding: 0 3%;
-  padding-bottom: 28.5%;
+  padding-bottom: 5%;
   border: 5px solid rgb(197, 195, 195);
 
   font-family: "Satisfy", "cursive";
@@ -154,15 +148,15 @@ aside{
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction:row;                  /*se ordenarán los elementos en el espacio de izquierda a derecha*/
-    align-items: center;
+    align-items:center;
 
   }
 
-.h2{
+h2{
    
   font-weight: 1;
   color: #ED951A;
-  font-size: 30px;
+  font-size: 60px;
   font-family: "Satisfy", "cursive";
   text-decoration: none;
   padding-top: 8%;                                 /* padding separacion de x bordes*/
@@ -172,7 +166,7 @@ aside{
 
 .h2-{
   color: #ED951A;
-  font-size: 40px;
+  font-size: 60px;
   font-family: 'Annie Use Your Telescope', cursive;
   display: flex;
   align-items: center;
@@ -240,21 +234,21 @@ aside{
   }
 
 .img1{
-  width:40%;
-  height:50%;
+  width:30%;
+  
   border: 3px solid burlywood;
   
 }
 .img2{
-  width: 40%;
-  height:50%;
+  width:30%;
+  
   border: 3px solid burlywood;
    
   }
 
 .img3{
-  width: 50%;
-  height:50%;
+  width: 40%;
+  
   border: 3px solid burlywood;
  
   
@@ -287,7 +281,8 @@ aside{
       
      
     border: 3px solid burlywood;
-    width: 80%;
+    width: 40%;
+    
     
     
     }
@@ -295,14 +290,14 @@ aside{
   .iframe2{
     
     border: 3px solid burlywood;
-    width: 80%;
+    width: 40%;
     
     }
 
   .ifram3{
     
     border: 3px solid burlywood;
-    width: 80%;
+    width: 40%;
     padding-bottom: 5%;
     
     
@@ -346,7 +341,9 @@ aside{
     }
 
       .mas-recetas{
-        margin-top: 15%;
+        font-size: 50px;
+        padding-top:5%;
+        padding-bottom:5%;
         
       }
       
@@ -361,54 +358,48 @@ aside{
       }
       
       .img-mila{
-        width: 400px;
-        height: 400px;
-        border: 3px solid rgb(122, 124, 4);
+        width: 18rem;
+        
+       
 
       }
+
       .img-pastas{
-        width: 400px;
-        height: 400px;
-        border: 3px solid rgb(122, 124, 4);
+        width: 18rem;
+          
       }
       
       .img-asado{
-        width: 400px;
-        height: 400px;
-        border: 3px solid rgb(122, 124, 4);
+        width: 18rem;
+        
       }
 
       .img-albondigas{
-        width: 400px;
-        height: 400px;
-        border: 3px solid rgb(122, 124, 4);
+        width: 18rem;
       }
 
       .img-hamburguesa{
-        width: 400px;
-        height: 400px;
-        border: 3px solid rgb(122, 124, 4);
+        width: 18rem;
+        
       }
       
       .img-paella{
-        width: 400px;
-        height: 400px;
-        border: 3px solid rgb(122, 124, 4);
+        width: 18rem;
       }
 
       .img-arroz{
-        width: 400px;
-        height: 400px;
-        border: 3px solid rgb(122, 124, 4);
+        width: 18rem;
       }
 
         .img-polenta{
-        width: 400px;
-        height: 400px;
-        border: 3px solid rgb(122, 124, 4);
-       
+          width: 18rem;
         }
 
+      .cards{
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+      
     
 
     .redeslogosfooter{
@@ -446,7 +437,7 @@ aside{
           position: fixed;                   /*para dejarlo fijo*/
           z-index: 999;                     /*para que este sobre todos*/
           border-radius: 50%;              
-          bottom: 20px;                    /*distancia*/
+          bottom: 25px;                    /*distancia*/
           right: 25px;                      /*distancia*/
           padding: 25px;
           transition: ease 0.3s;
@@ -460,7 +451,7 @@ aside{
       }
       
       .boton{
-          width: 60px;                 /*tamaño del boton */
+          width: 45px;                 /*tamaño del boton */
           transition: ease 1s;
           
       }
@@ -489,59 +480,18 @@ aside{
        a:hover{                        /*especifica el aspecto cuando el puntero esta sobre el*/
         color:rgb(160, 11, 11) ;
        }
+
       .contacto:hover {
         color:rgb(160, 11, 11) ;
         width: 240px;
         font-size: 20px;  
       }
+      .card:hover{
+        
+        background-size:cover;
+        box-shadow: 0.5rem 0rem 7rem  rgb(76, 59, 172);
 
-      
-
-      .img-mila:hover {
-        width: 410px;
-        height:400px;
-        color: blue;
       }
-      .img-pastas:hover {
-        width: 410px;
-        height:400px;
-        color: blue;
-      }
-      .img-asado:hover {
-        width: 405px;
-        height:400px;
-        color: blue;
-      }
-      .img-albondigas:hover {
-        width: 420px;
-        height:400px;
-        color: blue;
-      }
-
-      .img-hamburguesa:hover {
-        width: 420px;
-        height:400px;
-        color: blue;
-      }
-
-      .img-paella:hover {
-        width: 420px;
-        height:400px;
-        color: blue;
-      }
-      
-      .img-arroz:hover {
-        width: 420px;
-        height:400px;
-        color: blue;
-      }
-
-      .img-polenta:hover {
-        width: 420px;
-        height:400px;
-        color: blue;
-      }
-
       .gost{
         color: #f0d16b;
         display: flex;                           /*flexbox*/
@@ -556,15 +506,15 @@ aside{
         }
       }
       
-      @media (max-width:575px){
-        header{ 
-          border: none;
+      @media (max-width:575px){                
+        header{                            
+          border: none;                /*cuando llegue a 575px desaparecera el borde*/                 
         }
       }
      
 
       @media (max-width:768px) {
-        .titulo{
+        .titulo{                                      
           
           font-family: 'Fuggles', cursive;               /*tipo de letra*/
           font-size: 150px;                               /*tamaño*/
@@ -579,15 +529,15 @@ aside{
       }
 
       @media (max-width:575px){
-        .audio{                              /*cuando llegue a 575px aparecera el contenido*/
+        .audio{                              /*cuando llegue a 575px desaparecera el contenido*/
           display: none;
         }
       }
       
       @media (max-width:575px){
       nav{  
-                                  
-          flex-direction: column;
+                                        
+          flex-direction: column;         /* cuando llegue a 575px  el nav estara en columnas(verticalmente)*/
           
         }
       }
@@ -603,19 +553,42 @@ aside{
         @media (max-width:768px){
           section{  
             border: none;
-            justify-content:center;
+            justify-content:center;       /* cuando llegue a 768px se modificaran a estos valores*/
             align-items:center;
-            text-align:left;
-            
-                               
+            text-align:center;                    
             }
           }
-      @media (max-width:768px){
-        aside{  
-          display: none; 
-                             
+          
+          @media (max-width:575px){                
+            .container-boton{                            
+              bottom: 70px;                    /*distancia*/
+              right: 10px;                      /*distancia*/
+                              
+            }
           }
-        }
+          @media (max-width:575px){                
+            .boton{                        /*hasta 575 va a mantener el width */    
+             width: 25px;                 
+            }
+          }
+          @media (min-width:768px){                
+            .container-boton{                            
+              bottom: 150px;                    /*cuando tenga un minimo de 768px cambiara su posicion*/
+              
+                              
+            }
+          }
+          @media (min-width:992px){                
+            .container-boton{                            
+              bottom: 25px;                    /*cuando tenga un minimo de 992px cambiara su posicion*/
+              
+                              
+            }
+          }
+                              
+         
+
+        
 
         @media (max-width:575px){
           .redeslogos{                              /*cuando llegue a 575px aparecera el contenido*/
