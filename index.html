@@ -16,13 +16,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    
+    <script>
+      alert ("welcome my favorite strangers")
+    </script> 
   </head>
   
   <body>
-    
-    <audio class="audio" src="./audio/musica2.mp3" controls >
-   </audio>
+   
+   
+   
+   <audio class="audio" src="./audio/musica2.mp3" controls ></audio>
+
+
+   <div class="modo-nocturno">
+   <button onclick="modonocturno()" type="button" class="btn btn-outline-dark nv1" id="mn">Night vision</button>
+   <button onclick="modonocturno1()" type="button" class="btn btn-outline-light nv2 " >white vision</button>
+   
+   </div>
+   
+   
+
    <h1 class="gost">Bienvenidos</h1>
 
     <header>
@@ -293,14 +306,16 @@
         </div>
         
         <div info-desarrollador>
-          <a class="contacto" href="contactos.html"> CONTACTOS </a>
-          <h4>Desarrollador: Pablo Aguirre</h4>
-          <h4>DIRECCIÓN: carlos gimenez 819</h4>
-          <h4>CEL: 2915005200</h4>
+          <a class="contacto" href="contactos.html"> CONTACTOS </a>  
         </div>
-        
+
+        <button onclick="pop()" type="button" class="btn btn-outline-light">Desarrollador</button>
+
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+
+        
+
+
+        <script src="./javascript/javascript.js"></script>   
   </body>
 <html
