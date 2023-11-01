@@ -25,7 +25,9 @@ background-color: #fafafa;
   display: flex;
   justify-content:space-around;
 }
-
+.nv1{
+  color: #000000;
+}
 
 
   /*puede ser un logo, titulo*/
@@ -41,8 +43,8 @@ header{
    
     font-weight: 1;
     text-shadow: 1px 0 #EAD5B6, 6px 0 black;
-    color: #E5B36E;
-    border: 5px solid rgb(197, 195, 195);
+    color: #ca8524;
+    border: 5px solid rgb(24, 23, 23);
     
     }
    
@@ -81,6 +83,8 @@ header{
     background-color: #a58b37;                    /*color de fondo*/
      }
     
+     
+
   .titulo{
     font-family: 'Abril Fatface', cursive;
     font-size: 100px;
@@ -114,7 +118,7 @@ header{
   padding-left: 5%;
   padding-right: 5%;
  
-  border: 5px solid rgb(197, 195, 195);
+  border: 5px solid rgb(24, 23, 23);
   
   
    
@@ -132,7 +136,7 @@ header{
 
   padding: 0 3%;
   padding-bottom: 5%;
-  border: 5px solid rgb(197, 195, 195);
+  border: 5px solid rgb(24, 23, 23);
 
   font-family: "Satisfy", "cursive";
   font-weight: 1;
@@ -247,21 +251,45 @@ h2{
 .img2{
   width:30%;
   
-  border: 3px solid burlywood;
-   
+  border: 3px solid burlywood; 
   }
 
-.img3{
-  width: 40%;
+  .img3{
+    width: 40%;
+    
+    border: 3px solid burlywood; 
+  }
   
-  border: 3px solid burlywood;
- 
-  
-  
-  
-  
-}
+  .img1:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    }
 
+    .img2:hover{
+      border-radius:50%;
+      -webkit-border-radius:50%;
+      box-shadow: 0px 0px 15px 15px #ec731e;
+      -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      }
+
+
+
+.img3:hover{
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  }
+  
+  
   .pfinal{
     
     font-family: georgia;
@@ -383,23 +411,6 @@ h2{
         width: 18rem;
       }
 
-      .img-hamburguesa{
-        width: 18rem;
-        
-      }
-      
-      .img-paella{
-        width: 18rem;
-      }
-
-      .img-arroz{
-        width: 18rem;
-      }
-
-        .img-polenta{
-          width: 18rem;
-        }
-
       .cards{
         padding-top: 5%;
         padding-bottom: 5%;
@@ -421,6 +432,15 @@ h2{
         width: 60px;
         height: 60px;
       }
+      .logoface:hover{
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        box-shadow: 0px 0px 15px 15px #ec731e;
+        -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        }
+
 
     .logotwitter{
           
@@ -428,15 +448,35 @@ h2{
           height: 60px;
          
         }
+        .logotwitter:hover{
+          border-radius:50%;
+          -webkit-border-radius:50%;
+          box-shadow: 0px 0px 15px 15px #ec731e;
+          -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+          transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          }
+
 
     .logoinsta{
         width: 60px;
         height: 60px;
         
         }
+        .logoinsta:hover{
+          border-radius:50%;
+          -webkit-border-radius:50%;
+          box-shadow: 0px 0px 15px 15px #ec731e;
+          -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+          transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          }
+          
+         
+          
 
         
-        .container-boton{
+        .container-boton{                      /* boton flotante whatsapp*/
           background-color: #2e6329;      /*color al ico*/
           border: 1px solid #fff;
           position: fixed;                   /*para dejarlo fijo*/
